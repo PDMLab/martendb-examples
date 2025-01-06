@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  database:
+    image: library/postgres:17
+    container_name: testdb
+    environment:
+      POSTGRES_USER: 'marten'
+      POSTGRES_PASSWORD: 'marten'
+      POSTGRES_DB: 'marten'
+    ports:
+      - "5435:5432"
